@@ -4,7 +4,153 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PUBG Chicken Restaurant</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+  --bg: #F8F9FA;         
+  --primary: #FF6B00;    
+  --accent: #E63946;    
+  --white: #FFFFFF;      
+  --text-dark: #212529;  
+  --text-light: #6C757D; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-dark);
+  font-family: 'Tajawal', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: var(--primary);
+  color: var(--white);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 50px;
+}
+
+nav a {
+  color: var(--white);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  text-align: center;
+  color: var(--text-dark);
+}
+.hero h1 {
+  font-size: 3rem;
+  color: var(--text-dark);
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+.hero img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
+}
+
+
+/* Sections */
+section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.about {
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 30px;
+}
+
+/* Menu */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.menu-item {
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item img {
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+/* Contact */
+.contact {
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  margin-top: 40px;
+}
+.contact form {
+  text-align: left;
+  display: flex ;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact input, .contact textarea {
+  padding: 10px;
+  border: 1px solid var(--text-light);
+  border-radius: 5px;
+  width: 25%;
+}  
+.contact button {
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}   
+/* Footer */
+footer {
+  background: var(--text-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 20px;
+}
+
+  </style>
 </head>
 <body>
 
